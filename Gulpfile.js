@@ -12,7 +12,7 @@ var globs = {
         'bower_components/owl.carousel/dist/owl.carousel.js',
         'src/js/**/*.{js,coffee}'
     ],
-    html: 'src/*.ejs',
+    html: 'src/*.html',
     images: 'src/img/**',
     misc: 'src/**/*.{ico,eot,woff,ttf,php}'
 };
