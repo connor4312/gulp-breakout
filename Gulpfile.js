@@ -28,7 +28,7 @@ gulp.task('css', function() {
 });
 gulp.task('js', function () {
     gulp.src(globs.js)
-        .pipe($.if('**/*.coffee', coffee()))
+        .pipe($.if('**/*.coffee', $.coffee()))
         .pipe($.if(isProduction, $.uglify()))
         .pipe($.if(!isProduction, reload({stream: true})))
         .pipe(gulp.dest('dist/js'));
