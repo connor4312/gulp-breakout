@@ -9,7 +9,6 @@ var globs = {
     css: 'src/css/**/*.less',
     js: [
         'bower_components/bootstrap/dist/js/bootstrap.js',
-        'bower_components/owl.carousel/dist/owl.carousel.js',
         'src/js/**/*.{js,coffee}'
     ],
     html: 'src/*.html',
