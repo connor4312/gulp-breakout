@@ -34,6 +34,7 @@ gulp.task('js', function () {
 });
 gulp.task('html', function() {
     gulp.src(globs.html)
+        .pipe($.if('*.ejs', $.ejs()))
         .pipe($.if(isProduction, $.htmlmin({collapseWhitespace: true})))
         .pipe($.if(!isProduction, reload({stream: true})))
         .pipe(gulp.dest('dist'));
