@@ -29,7 +29,6 @@
     "url": "https://github.com/connor4312/gulp-breakout/issues"
   },
   "devDependencies": {
-    "browser-sync": "^1.5.8",
-    "gulp-watch": "^1.1.0"
+    "browser-sync": "^1.7.2"
   }
 }
