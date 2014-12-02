@@ -53,7 +53,7 @@ gulp.task('misc', function () {
 
 gulp.task('watch', function () {
     for (var key in globs) {
-        $.watch({glob: globs[key], name: key}, [key]);
+        gulp.watch(globs[key], [key]);
     }
 });
 gulp.task('connect', function() {
